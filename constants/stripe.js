@@ -2,11 +2,9 @@
 require('dotenv').config();
 const configureStripe = require('stripe');
 
-const secretKey = process.env.MY_SECRET_KEY
+// const secretKey = process.env.MY_SECRET_KEY
 
-const STRIPE_SECRET_KEY = process.env.NODE_ENV === 'production'
-? 'sk_live_MY_SECRET_KEY'
-: secretKey;
+const STRIPE_SECRET_KEY = 'sk_test_21sbK2K869BnJJPOm3BGpKcd';
 
 const stripe = configureStripe(STRIPE_SECRET_KEY);
 
