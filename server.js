@@ -185,9 +185,9 @@ app.post('/api/avatar/:avatar_id', upload.single('file'), (req, res) => {
 // });
 
 //heroku
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+// });
 
 //====================================================
 ///////START SERVER///////////////////////////////////
