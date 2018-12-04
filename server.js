@@ -88,7 +88,7 @@ app.use(function (req, res, next) {
 });
 
 //heroku
-app.use(express.static(path.join(__dirname, "client", "build")))
+// app.use(express.static(path.join(__dirname, "client", "build")))
 
 
 //====================================================
@@ -180,9 +180,9 @@ app.post('/api/avatar/:avatar_id', upload.single('file'), (req, res) => {
 //====================================================
 ///////SANITY CHECK///////////////////////////////////
 //====================================================
-// app.get('/', (req, res) => {
-//     res.send('<h1>&#128372; Moonwalking Micheal Jackson style...</h1>');
-// });
+app.get('/', (req, res) => {
+    res.send('<h1>&#128372; Moonwalking Micheal Jackson style...</h1>');
+});
 
 //heroku
 // app.get("*", (req, res) => {
