@@ -73,8 +73,8 @@ app.get('/public', (req, res) => {
 
 app.use(express.static(__dirname + '/api/users/'));
 app.use(express.static(__dirname + '/public/'));
-const publicPath = path.join(__dirname, '../server/public');
-app.use(express.static(publicPath));
+// const publicPath = path.join(__dirname, '../server/public');
+// app.use(express.static(publicPath));
 app.use('/public/images', express.static('Images'));
 // app.use(function (req, res, next) {
 //     res.header("Access-Control-Allow-Origin", "*");
