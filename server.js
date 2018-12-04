@@ -115,8 +115,8 @@ const configureServer = app => {
 // const configureServer = require('./server');
 const configureRoutes = require('./routes');
 
-configureServer(app);
-configureRoutes(app);
+// configureServer(app);
+// configureRoutes(app);
 
 // module.exports = configureServer;
 
