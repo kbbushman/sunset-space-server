@@ -110,15 +110,12 @@ const configureServer = app => {
     app.use(bodyParser.json());
 };
 
-// const SERVER_CONFIGS = require('./constants/server');
+const SERVER_CONFIGS = require('./constants/server');
 
-// const configureServer = require('./server');
 const configureRoutes = require('./routes');
 
-// configureServer(app);
-// configureRoutes(app);
-
-// module.exports = configureServer;
+configureServer(app);
+configureRoutes(app);
 
 
 //====================================================
